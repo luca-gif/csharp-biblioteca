@@ -1,18 +1,14 @@
 ﻿// See https://aka.ms/new-console-template for more information
 public class Dvd : Document
 {
-    int serialNumber;
 
     //Constructor
-    public Dvd(int serialNumber) : base("mioDVD", 2020, "Comedy", 166, "autore")
+    public Dvd(int durate) : base(5151,"Harry Potter", 2020, "Comedy", 166, "autore")
     {
-        serialNumber = serialNumber;
+        Duration = durate;
     }
 
-    public int duration(int duration)
-    {
-        return duration;
-    }
+    public int Duration { get; set; }
 
 }
 

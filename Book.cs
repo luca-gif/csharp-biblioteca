@@ -1,18 +1,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
 public class Book : Document
 {
-    string ISBN;
 
     //Constructor
-    public Book(string iSBN) : base("titolo", 2015, "History", 15, "autore")
+    public Book(int pages) : base(51545, "New York", 2015, "genere", 15, "autore")
     {
-        ISBN = iSBN;
-    }
+        this.TotalPages = pages;
+     }
 
-    public int totalPages(int pages)
-    {
-        return pages;
-    }
-
+    public int TotalPages { get; set; }
 }
 

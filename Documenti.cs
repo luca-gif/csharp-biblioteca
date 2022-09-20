@@ -1,18 +1,20 @@
 ﻿// See https://aka.ms/new-console-template for more information
 public class Document
 {
-/*    protected string title;
+    protected int code;
+    protected string title;
     protected int year;
     protected string genre;
     protected bool isAvailable;
     protected int shelfNumber;
-    protected string author;*/
+    protected string author;
 
 
     //Constructor
 
-    public Document(string Title, int Year, string Genre, int ShelfNumber, string Author)
+    public Document(int Code, string Title, int Year, string Genre, int ShelfNumber, string Author)
     {
+        this.Code = Code;
         this.Title = Title;
         this.Year = Year;
         this.Genre = Genre;
@@ -23,6 +25,8 @@ public class Document
 
 
     //Properties
+
+    public int Code { get; set; }
 
     public string Title { get; set; }
     
