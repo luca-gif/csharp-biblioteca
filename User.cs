@@ -7,6 +7,7 @@ public class User
     string password;
     int phone;
 
+    //Constructor
     public User(string cognome, string nome, string email, string password, int telefono)
     {
         this.name = name;
@@ -16,59 +17,15 @@ public class User
         this.phone = phone;
     }
 
-    //GET
-    public string getName()
-    {
-        return this.name;
-    }
+    //Properties
+    public string Name { get; set; }
 
-    public string getSurname()
-    {
-        return this.surname;
-    }
+    public string Surname { get; set; }
 
-    public string getEmail()
-    {
-        return this.email;
-    }
+    public string getEmail { get; set; }
 
-    public string getPassword()
-    {
-        return this.password;
-    }
+    public string getPassword { get; set; }
 
-    public int getphone()
-    {
-        return this.phone;
-    }
-
-
-    //SET
-
-    public void setName(string name)
-    {
-        this.name = name;
-    }
-
-    public void setSurname(string surname)
-    {
-        this.surname = surname;
-    }
-
-    public void setEmail(string email)
-    {
-        this.email = email;
-    }
-
-    public void setPassword(string password)
-    {
-        this.password = password;
-    }
-
-    public void setPhone(int phone)
-    {
-        this.phone = phone;
-    }
+    public int getphone { get; set; }
 
 }
-
