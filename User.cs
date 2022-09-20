@@ -1,20 +1,15 @@
 ﻿// See https://aka.ms/new-console-template for more information
 public class User
 {
-    string name;
-    string surname;
-    string email;
-    string password;
-    int phone;
 
     //Constructor
-    public User(string cognome, string nome, string email, string password, int telefono)
+    public User(string Name, string Surname, string Email, string Password, int Phone)
     {
-        this.name = name;
-        this.surname = surname;
-        this.email = email;
-        this.password = password;
-        this.phone = phone;
+        this.Name = Name;
+        this.Surname = Surname;
+        this.Email = Email;
+        this.Password = Password;
+        this.Phone = Phone;
     }
 
     //Properties
@@ -22,10 +17,10 @@ public class User
 
     public string Surname { get; set; }
 
-    public string getEmail { get; set; }
+    public string Email { get; set; }
 
-    public string getPassword { get; set; }
+    public string Password { get; set; }
 
-    public int getphone { get; set; }
+    public int Phone { get; set; }
 
 }

@@ -1,20 +1,20 @@
 ﻿// See https://aka.ms/new-console-template for more information
-public class Documenti
+public class Document
 {
-    string title;
-    int age;
-    string genre;
-    bool isAvailable;
-    int shelfNumber;
-    string author;
+    protected string title;
+    protected int year;
+    protected string genre;
+    protected bool isAvailable;
+    protected int shelfNumber;
+    protected string author;
 
 
     //Constructor
 
-    public Documenti(string title, int age, string genre, bool isAvailable, int shelfNumber, string author)
+    public Document(string title, int year, string genre, int shelfNumber, string author)
     {
         this.title = title;
-        this.age = age;
+        this.year = year;
         this.genre = genre;
         this.isAvailable = isAvailable;
         this.shelfNumber = shelfNumber;
@@ -26,7 +26,7 @@ public class Documenti
 
     public string Title { get; set; }
     
-    public int Age { get; set; }
+    public int Year { get; set; }
     
     public string Genre { get; set; }
 
