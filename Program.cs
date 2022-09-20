@@ -10,17 +10,14 @@ users.Add(new User("Marco", "Versi", "marco@verdi.com", "psw", 370544415));
 
 List <Book> books = new List<Book>();
 
-books.Add(new Book(114));
-books.Add(new Book(134));
-books.Add(new Book(229));
+books.Add(new Book(005, "harry potter", 2014, "action", true, 15, "J.K. Rowland", 188));
+
 
 // Creo Dvd
 
 List<Dvd> dvd = new List<Dvd>();
 
-dvd.Add(new Dvd(164));
-dvd.Add(new Dvd(184));
-dvd.Add(new Dvd(203));
+dvd.Add(new Dvd(005, "rambo", 2014, "action", true, 145, "rambo", 109));
 
 
 // Ricerca per titolo
