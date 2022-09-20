@@ -3,7 +3,7 @@ public class Book : Document
 {
 
     //Constructor
-    public Book(int pages) : base(51545, "New York", 2015, "genere", 15, "autore")
+    public Book(int pages) : base(51545, "new york", 2015, "genere", 15, "autore")
     {
         this.TotalPages = pages;
      }

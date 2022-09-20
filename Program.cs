@@ -5,10 +5,6 @@ List <User> users = new List<User>();
 users.Add(new User("Luca", "Rossi", "luca@rossi.com", "psw", 370554515));
 users.Add(new User("Marco", "Versi", "marco@verdi.com", "psw", 370544415));
 
-foreach (var user in users)
-{
-    Console.WriteLine(user.Name);
-}
 
 // Creo libri
 
@@ -30,15 +26,17 @@ dvd.Add(new Dvd(203));
 // Ricerca per titolo
 
 Console.WriteLine("Cerchi un libro o un DVD?");
-string search = Console.ReadLine();
+string search = Console.ReadLine().ToLower();
 
 if(search == "libro")
 {
     Console.WriteLine("Inserisci un titolo");
+    string bookToSearch = Console.ReadLine().ToLower();
 
-    foreach(Book book in books)
+    foreach (Book book in books)
     {
-        if(book.Title == Console.ReadLine()){
+        if(book.Title == bookToSearch)
+        {
             Console.WriteLine(book.Title);
                     }
         else
@@ -48,13 +46,14 @@ if(search == "libro")
     }
 }
 
-else if(search == "DVD")
+else if(search == "dvd")
 {
     Console.WriteLine("Inserisci un titolo");
+    string dvdToSearch = Console.ReadLine().ToLower();
 
     foreach (Dvd dvdItem in dvd)
     {
-        if (dvdItem.Title == Console.ReadLine())
+        if (dvdItem.Title == dvdToSearch)
         {
             Console.WriteLine(dvdItem.Title);
         }
@@ -63,4 +62,9 @@ else if(search == "DVD")
             Console.WriteLine("Mi dispiace ma questo DVD non è presente, scegline un altro!");
         }
     }
+}
+
+else
+{
+    Console.WriteLine($"{search} non è presente, prova a cercare qualcosa di cui disponiamo.");
 }
